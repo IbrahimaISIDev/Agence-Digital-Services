@@ -107,6 +107,7 @@ agency-app/
 ├── package.json
 ├── README.md
 └── tsconfig.json
+└── tsconfig.json
 
 ---------------------------------------------------------------- Commandes pour la création des dossiers et fichiers--------------------------------
 # Créer les dossiers principaux

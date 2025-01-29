@@ -1,0 +1,24 @@
+mkdir -p app/{Console,Exceptions,Http/{Controllers,Middleware,Requests},Models,Services,Repositories,Interfaces,Events,Listeners,Notifications,Providers} \
+         bootstrap \
+         config \
+         database/{factories,migrations,seeders} \
+         resources/{lang,views} \
+         routes \
+         storage \
+         tests
+
+touch routes/{api.php,web.php} \
+      app/Http/Controllers/{AuthController.php,ClientController.php,TransactionController.php} \
+      app/Http/Middleware/{Authenticate.php,CheckRole.php} \
+      app/Http/Requests/{StoreClientRequest.php,UpdateClientRequest.php} \
+      app/Models/{Client.php,Transaction.php} \
+      app/Services/{ClientService.php,TransactionService.php} \
+      app/Repositories/{ClientRepository.php,TransactionRepository.php} \
+      app/Interfaces/{IClientRepository.php,ITransactionRepository.php} \
+      app/Events/{ClientCreated.php,TransactionProcessed.php} \
+      app/Listeners/{SendClientWelcomeEmail.php,LogTransaction.php} \
+      app/Notifications/{ClientRegistered.php,TransactionAlert.php} \
+      app/Providers/{AppServiceProvider.php,EventServiceProvider.php,AuthServiceProvider.php} \
+      .env \
+      .gitignore \
+      composer.json

@@ -1,7 +1,11 @@
 # 🚀 Agence Digital Services  
 
 ## 📌 Description  
-**Agence Digital Services** est une application web de gestion multi-services permettant de gérer efficacement les transactions, clients, soldes et rapports d’une agence digitale. Elle offre des fonctionnalités avancées telles que la gestion des alertes, des dépenses et des statistiques financières.
+**Agence Multi-Services** est une application web complète et robuste développée avec **Laravel** pour le backend, permettant une gestion fluide et efficace des services proposés par une agence digitale : les transactions, clients, soldes et rapports... Elle offre une multitude de fonctionnalités avancées, telles que la gestion des clients, des transactions financières, des notifications en temps réel et bien plus encore, pour assurer une expérience utilisateur optimale. L'architecture de l'application repose sur une séparation claire des responsabilités, ce qui facilite la maintenance et l'évolutivité du système. Le frontend est construit avec un framework moderne: **React.js**, permettant une interface utilisateur dynamique, réactive et intuitive. Cette approche garantit une expérience fluide et performante pour les utilisateurs, tout en respectant les meilleures pratiques en matière de développement web et de scalabilité. L'application est conçue pour être facilement extensible et adaptable, offrant ainsi une solution pérenne pour la gestion des services multiples d'une agence digitale.
+Elle offre des fonctionnalités avancées telles que la gestion des alertes, des dépenses et des statistiques financières.
+
+
+---
 
 ## 🏗️ Structure du Projet  
 L’application suit une architecture modulaire et bien organisée :  
@@ -29,6 +33,7 @@ agence-mult-services/
 ├── .env                # Variables d’environnement
 ├── package.json        # Dépendances et scripts NPM
 └── tsconfig.json       # Configuration TypeScript
+└── tailwind.config.js  # Configuration Tailwind CSS
 ```
 
 ## 🎯 Fonctionnalités Principales  
@@ -56,11 +61,15 @@ npm install
 npm run dev
 ```
 
-## 🛠️ Technologies Utilisées  
+- ## 🚀 Technologies utilisées
+- **Backend** : Laravel (PHP)
+- **Base de données** : MySQL / PostgreSQL
 - **Frontend** : React, Tailwind CSS  
-- **Backend** : (préciser si tu utilises Node.js, Laravel, etc.)  
-- **Base de données** : PostgreSQL (ou autre si différent)  
-- **Outils** : ESLint, Prettier, Git, Jest  
+- **Outils** : ESLint, Prettier, Git, Jest
+- **Authentification** : Laravel Sanctum / Passport
+- **Stockage** : AWS S3 / Local
+- **Gestion des files d'attente** : Redis / Horizon
+- **Tests** : PHPUnit / Pest
 
 ## 📌 Contribution  
 Les contributions sont les bienvenues ! Pour proposer des modifications :  
@@ -72,3 +81,13 @@ Les contributions sont les bienvenues ! Pour proposer des modifications :
 
 ## 📜 Licence  
 Ce projet est sous licence MIT.  
+
+## 📌 Conclusion
+
+Cette architecture permet de mieux structurer le projet, d'assurer une séparation claire des responsabilités, et de faciliter la scalabilité. 🚀
+
+## 📩 Contact
+
+- **Auteur** : IbrahimaISIDev
+- **Email** : sorydiallo371@gmail.com
+- **GitHub** : [IbrahimaISIDev](https://github.com/IbrahimaISIDev)
