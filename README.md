@@ -1,71 +1,74 @@
-# Getting Started with Create React App
+# 🚀 Agence Digital Services  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Description  
+**Agence Digital Services** est une application web de gestion multi-services permettant de gérer efficacement les transactions, clients, soldes et rapports d’une agence digitale. Elle offre des fonctionnalités avancées telles que la gestion des alertes, des dépenses et des statistiques financières.
 
-## Available Scripts
+## 🏗️ Structure du Projet  
+L’application suit une architecture modulaire et bien organisée :  
 
-In the project directory, you can run:
+```
+agence-mult-services/
+├── public/             # Fichiers statiques (index.html, favicon, manifest)
+├── src/                # Code source principal
+│   ├── components/     # Composants réutilisables (UI, Layout, Transactions, Clients, etc.)
+│   ├── hooks/          # Hooks personnalisés pour la gestion des états et API
+│   ├── services/       # Services pour interagir avec l’API backend
+│   ├── utils/          # Fonctions utilitaires (formatage, alertes, validation)
+│   ├── context/        # Contextes React pour l'authentification, les thèmes et les alertes
+│   ├── views/          # Pages principales (Transactions, Statistiques, Clients, etc.)
+│   ├── styles/         # Fichiers CSS globaux et utilitaires
+│   ├── assets/         # Images, icônes et polices
+│   ├── config/         # Configuration des routes et API
+│   ├── types/          # Définition des types TypeScript
+│   ├── App.jsx         # Composant principal de l’application
+│   ├── index.jsx       # Point d’entrée React
+│   └── setupTests.js   # Configuration des tests
+├── tests/              # Tests unitaires, d'intégration et end-to-end
+├── docs/               # Documentation du projet
+├── scripts/            # Scripts pour build et déploiement
+├── .env                # Variables d’environnement
+├── package.json        # Dépendances et scripts NPM
+└── tsconfig.json       # Configuration TypeScript
+```
 
-### `npm start`
+## 🎯 Fonctionnalités Principales  
+✅ Gestion des transactions et dépenses  
+✅ Suivi des soldes (cash, Wave, Orange Money)  
+✅ Alertes en temps réel sur les seuils critiques  
+✅ Génération et visualisation de rapports  
+✅ Interface utilisateur réactive avec React & Tailwind CSS  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Installation et Configuration  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1️⃣ Cloner le projet  
+```bash
+git clone https://github.com/IbrahimaISIDev/Agence-Digital-Services.git
+cd Agence-Digital-Services
+```
 
-### `npm test`
+### 2️⃣ Installer les dépendances  
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3️⃣ Lancer l’application  
+```bash
+npm run dev
+```
 
-### `npm run build`
+## 🛠️ Technologies Utilisées  
+- **Frontend** : React, Tailwind CSS  
+- **Backend** : (préciser si tu utilises Node.js, Laravel, etc.)  
+- **Base de données** : PostgreSQL (ou autre si différent)  
+- **Outils** : ESLint, Prettier, Git, Jest  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📌 Contribution  
+Les contributions sont les bienvenues ! Pour proposer des modifications :  
+1. Fork le projet  
+2. Crée une branche (`git checkout -b feature-nouvelle-fonctionnalite`)  
+3. Commit tes changements (`git commit -m "Ajout d’une nouvelle fonctionnalité"`)  
+4. Push la branche (`git push origin feature-nouvelle-fonctionnalité`)  
+5. Ouvre une Pull Request  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Agence-Digital-Services
+## 📜 Licence  
+Ce projet est sous licence MIT.  

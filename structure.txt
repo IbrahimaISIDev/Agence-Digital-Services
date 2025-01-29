@@ -1,0 +1,179 @@
+agency-app/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── alerts/
+│   │   │   ├── AlertsList.jsx
+│   │   │   └── AlertItem.jsx
+│   │   ├── balance/
+│   │   │   ├── BalanceCards.jsx
+│   │   │   └── BalanceItem.jsx
+│   │   ├── charts/
+│   │   │   ├── TransactionChart.jsx
+│   │   │   └── TransactionPieChart.jsx
+│   │   ├── layout/
+│   │   │   ├── DashboardLayout.jsx
+│   │   │   ├── Header.jsx
+│   │   │   └── Sidebar.jsx
+│   │   ├── loading/
+│   │   │   ├── LoadingSpinner.jsx
+│   │   │   └── SkeletonLoader.jsx
+│   │   ├── transactions/
+│   │   │   ├── TransactionForm.jsx
+│   │   │   ├── TransactionList.jsx
+│   │   │   └── TransactionItem.jsx
+│   │   ├── clients/
+│   │   │   ├── ClientList.jsx
+│   │   │   └── ClientCard.jsx
+│   │   ├── reports/
+│   │   │   ├── ReportGenerator.jsx
+│   │   │   └── ReportViewer.jsx
+│   │   └── ui/
+│   │       ├── Button.jsx
+│   │       ├── Card.jsx
+│   │       ├── Input.jsx
+│   │       ├── Select.jsx
+│   │       ├── Alert.jsx
+│   │       └── Modal.jsx
+│   ├── hooks/
+│   │   ├── useTransactions.js
+│   │   ├── useClients.js
+│   │   ├── useBalances.js
+│   │   ├── useAuth.js
+│   │   ├── useReports.js
+│   │   └── useAlerts.js
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── auth.service.js
+│   │   ├── transaction.service.js
+│   │   ├── client.service.js
+│   │   ├── balance.service.js
+│   │   └── report.service.js
+│   ├── utils/
+│   │   ├── validation.js
+│   │   ├── formatters.js
+│   │   ├── alerts.js
+│   │   ├── constants.js
+│   │   └── helpers.js
+│   ├── context/
+│   │   ├── AuthContext.js
+│   │   ├── AlertContext.js
+│   │   └── ThemeContext.js
+│   ├── views/
+│   │   ├── TransactionsView.jsx
+│   │   ├── StatisticsView.jsx
+│   │   ├── ClientsView.jsx
+│   │   ├── ReportsView.jsx
+│   │   └── ExpensesView.jsx
+│   ├── styles/
+│   │   ├── global.css
+│   │   ├── components.css
+│   │   └── utilities.css
+│   ├── assets/
+│   │   ├── images/
+│   │   ├── icons/
+│   │   └── fonts/
+│   ├── config/
+│   │   ├── routes.js
+│   │   └── api.config.js
+│   ├── types/
+│   │   ├── transaction.types.ts
+│   │   ├── client.types.ts
+│   │   └── balance.types.ts
+│   ├── App.jsx
+│   ├── index.jsx
+│   └── setupTests.js
+├── tests/
+│   ├── unit/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   └── utils/
+│   ├── integration/
+│   └── e2e/
+├── docs/
+│   ├── api/
+│   ├── components/
+│   └── getting-started.md
+├── scripts/
+│   ├── build.js
+│   └── deploy.js
+├── .env
+├── .env.development
+├── .env.production
+├── .gitignore
+├── package.json
+├── README.md
+└── tsconfig.json
+
+---------------------------------------------------------------- Commandes pour la création des dossiers et fichiers--------------------------------
+# Créer les dossiers principaux
+mkdir -p agence-mult-services/{public,src/{components/{alerts,balance,charts,layout,loading,transactions,clients,reports,ui},hooks,services,utils,context,views,styles,assets/{images,icons,fonts},config,types},tests/{unit/{components,hooks,utils},integration,e2e},docs/{api,components},scripts}
+
+# Créer les fichiers dans public/
+touch agence-mult-services/public/{index.html,favicon.ico,manifest.json}
+
+# Créer les fichiers dans src/components/alerts/
+touch agence-mult-services/src/components/alerts/{AlertsList.jsx,AlertItem.jsx}
+
+# Créer les fichiers dans src/components/balance/
+touch agence-mult-services/src/components/balance/{BalanceCards.jsx,BalanceItem.jsx}
+
+# Créer les fichiers dans src/components/charts/
+touch agence-mult-services/src/components/charts/{TransactionChart.jsx,TransactionPieChart.jsx}
+
+# Créer les fichiers dans src/components/layout/
+touch agence-mult-services/src/components/layout/{DashboardLayout.jsx,Header.jsx,Sidebar.jsx}
+
+# Créer les fichiers dans src/components/loading/
+touch agence-mult-services/src/components/loading/{LoadingSpinner.jsx,SkeletonLoader.jsx}
+
+# Créer les fichiers dans src/components/transactions/
+touch agence-mult-services/src/components/transactions/{TransactionForm.jsx,TransactionList.jsx,TransactionItem.jsx}
+
+# Créer les fichiers dans src/components/clients/
+touch agence-mult-services/src/components/clients/{ClientList.jsx,ClientCard.jsx}
+
+# Créer les fichiers dans src/components/reports/
+touch agence-mult-services/src/components/reports/{ReportGenerator.jsx,ReportViewer.jsx}
+
+# Créer les fichiers dans src/components/ui/
+touch agence-mult-services/src/components/ui/{Button.jsx,Card.jsx,Input.jsx,Select.jsx,Alert.jsx,Modal.jsx}
+
+# Créer les fichiers dans src/hooks/
+touch agence-mult-services/src/hooks/{useTransactions.js,useClients.js,useBalances.js,useAuth.js,useReports.js,useAlerts.js}
+
+# Créer les fichiers dans src/services/
+touch agence-mult-services/src/services/{api.js,auth.service.js,transaction.service.js,client.service.js,balance.service.js,report.service.js}
+
+# Créer les fichiers dans src/utils/
+touch agence-mult-services/src/utils/{validation.js,formatters.js,alerts.js,constants.js,helpers.js}
+
+# Créer les fichiers dans src/context/
+touch agence-mult-services/src/context/{AuthContext.js,AlertContext.js,ThemeContext.js}
+
+# Créer les fichiers dans src/views/
+touch agence-mult-services/src/views/{TransactionsView.jsx,StatisticsView.jsx,ClientsView.jsx,ReportsView.jsx,ExpensesView.jsx}
+
+# Créer les fichiers dans src/styles/
+touch agence-mult-services/src/styles/{global.css,components.css,utilities.css}
+
+# Créer les fichiers dans src/config/
+touch agence-mult-services/src/config/{routes.js,api.config.js}
+
+# Créer les fichiers dans src/types/
+touch agence-mult-services/src/types/{transaction.types.ts,client.types.ts,balance.types.ts}
+
+# Créer les fichiers dans la racine du projet
+touch agence-mult-services/{package.json,README.md,tsconfig.json,.env,.env.development,.env.production,.gitignore,setupTests.js}
+
+# Créer les fichiers dans scripts/
+touch agence-mult-services/scripts/{build.js,deploy.js}
+
+# Créer les dossiers pour les tests
+mkdir -p agence-mult-services/tests/unit/{components,hooks,utils}
+
+# Créer les fichiers principaux dans src/
+touch agence-mult-services/src/{App.jsx,index.jsx}
