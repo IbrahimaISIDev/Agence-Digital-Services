@@ -1,5 +1,5 @@
 // components/transactions/TransactionsList.jsx
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "../ui/Card";
 
 export const TransactionsList = ({ transactions }) => {
   return (

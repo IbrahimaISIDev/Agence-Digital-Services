@@ -1,20 +1,36 @@
 // services/transactionService.js
 import { api } from './api';
 
-export const transactionService = {
-  async getAll() {
-    return api.get('/transactions');
-  },
+class TransactionService {
+  async getTransactions(params = {}) {
+    const queryString = new URLSearchParams(params).toString();
+    return api.get(`/transactions?${queryString}`);
+  }
 
-  async create(transaction) {
+  async getTransaction(id) {
+    return api.get(`/transactions/${id}`);
+  }
+
+  async createTransaction(transaction) {
     return api.post('/transactions', transaction);
-  },
+  }
 
-  async update(id, transaction) {
+  async updateTransaction(id, transaction) {
     return api.put(`/transactions/${id}`, transaction);
-  },
+  }
 
-  async delete(id) {
+  async deleteTransaction(id) {
     return api.delete(`/transactions/${id}`);
   }
-};
+
+  async cancelTransaction(id, reason) {
+    return api.post(`/transactions/${id}/cancel`, { reason });
+  }
+
+  async getTransactionStats(params = {}) {
+    const queryString = new URLSearchParams(params).toString();
+    return api.get(`/transactions/stats?${queryString}`);
+  }
+}
+
+export const transactionService = new TransactionService();

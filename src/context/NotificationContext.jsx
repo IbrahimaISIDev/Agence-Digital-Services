@@ -1,6 +1,6 @@
 // contexts/NotificationContext.jsx
 import React, { createContext, useState, useContext, useCallback } from 'react';
-import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Alert, AlertDescription } from "../components/ui/Alert";
 
 const NotificationContext = createContext(null);
 

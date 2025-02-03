@@ -1,35 +1,53 @@
-// services/storageService.js
-export const storageService = {
-    setItem(key, value) {
-      try {
-        localStorage.setItem(key, value);
-      } catch (error) {
-        console.error('Error saving to localStorage:', error);
-      }
-    },
-  
-    getItem(key) {
-      try {
-        return localStorage.getItem(key);
-      } catch (error) {
-        console.error('Error reading from localStorage:', error);
-        return null;
-      }
-    },
-  
-    removeItem(key) {
-      try {
-        localStorage.removeItem(key);
-      } catch (error) {
-        console.error('Error removing from localStorage:', error);
-      }
-    },
-  
-    clear() {
-      try {
-        localStorage.clear();
-      } catch (error) {
-        console.error('Error clearing localStorage:', error);
-      }
+ // services/storageService.js
+class StorageService {
+  setItem(key, value) {
+    if (typeof value === 'object') {
+      localStorage.setItem(key, JSON.stringify(value));
+    } else {
+      localStorage.setItem(key, value);
     }
-  };
+  }
+
+  getItem(key) {
+    const item = localStorage.getItem(key);
+    try {
+      return JSON.parse(item);
+    } catch {
+      return item;
+    }
+  }
+
+  removeItem(key) {
+    localStorage.removeItem(key);
+  }
+
+  clearAll() {
+    localStorage.clear();
+  }
+
+  setToken(token) {
+    this.setItem('token', token);
+  }
+
+  getToken() {
+    return this.getItem('token');
+  }
+
+  setUser(user) {
+    this.setItem('user', user);
+  }
+
+  getUser() {
+    return this.getItem('user');
+  }
+
+  setLastSync(date) {
+    this.setItem('lastSync', date);
+  }
+
+  getLastSync() {
+    return this.getItem('lastSync');
+  }
+}
+
+export const storageService = new StorageService();

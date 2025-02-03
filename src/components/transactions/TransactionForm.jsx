@@ -1,8 +1,8 @@
 // components/transactions/TransactionForm.jsx
 import { useState } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Card, CardHeader, CardTitle, CardContent } from "../ui/Card";
+import { Button } from "../ui/Button";
+import { Input } from "../ui/Input";
 
 export const TransactionForm = ({ onSubmit }) => {
   const [transaction, setTransaction] = useState({

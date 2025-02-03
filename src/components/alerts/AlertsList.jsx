@@ -1,5 +1,5 @@
 // components/alerts/AlertsList.jsx
-import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Alert, AlertDescription } from "../ui/alert";
 
 export const AlertsList = ({ alerts }) => {
   if (!alerts.length) return null;
